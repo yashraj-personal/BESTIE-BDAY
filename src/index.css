@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Vibrant Palette Custom Pop Shadows */
+.vibrant-pop-shadow-pink {
+  box-shadow: 12px 12px 0px rgba(244, 114, 182, 0.4);
+}
+
+.vibrant-pop-shadow-yellow {
+  box-shadow: 12px 12px 0px rgba(253, 224, 71, 0.5);
+}
+
+.vibrant-pop-shadow-purple {
+  box-shadow: 12px 12px 0px rgba(192, 132, 252, 0.4);
+}
+
+.vibrant-pop-shadow-blue {
+  box-shadow: 12px 12px 0px rgba(96, 165, 250, 0.4);
+}
+
+.vibrant-text-shadow-pink {
+  text-shadow: 4px 4px 0px #fce7f3, 8px 8px 0px #fbcfe8;
+}
+
+.vibrant-text-shadow-yellow {
+  text-shadow: 3px 3px 0px #fef08a, 6px 6px 0px #fde047;
+}
+
+/* Vibrant Palette Theater Velvet Curtain */
+.curtain-vibrant-left {
+  background: repeating-linear-gradient(
+    90deg,
+    #dc2626,
+    #dc2626 24px,
+    #b91c1c 24px,
+    #b91c1c 48px
+  );
+  border-right: 6px solid #fde047;
+  box-shadow: inset -15px 0 30px rgba(0,0,0,0.5), 15px 0 35px rgba(0,0,0,0.7);
+}
+
+.curtain-vibrant-right {
+  background: repeating-linear-gradient(
+    -90deg,
+    #dc2626,
+    #dc2626 24px,
+    #b91c1c 24px,
+    #b91c1c 48px
+  );
+  border-left: 6px solid #fde047;
+  box-shadow: inset 15px 0 30px rgba(0,0,0,0.5), -15px 0 35px rgba(0,0,0,0.7);
+}
+
+.curtain-valance-vibrant {
+  background: #b91c1c;
+  border-bottom: 5px solid #facc15;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* Gold rope and metallic trim */
+.gold-trim {
+  background: linear-gradient(90deg, #f59e0b, #fef08a, #d97706, #fde047, #b45309);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pop-text-pink {
+  background: linear-gradient(135deg, #ec4899 0%, #db2777 50%, #be185d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Candle flame glow & animation */
+@keyframes flameFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 12px #ff9900) drop-shadow(0 0 24px #ff3700);
+  }
+  25% {
+    transform: scale(1.08, 0.95) rotate(2deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 16px #ffb700) drop-shadow(0 0 32px #ff4800);
+  }
+  50% {
+    transform: scale(0.94, 1.05) rotate(-2deg);
+    opacity: 0.9;
+    filter: drop-shadow(0 0 10px #ff8800) drop-shadow(0 0 20px #ff2a00);
+  }
+  75% {
+    transform: scale(1.04, 0.98) rotate(1deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 14px #ffaa00) drop-shadow(0 0 28px #ff4000);
+  }
+}
+
+.animate-flame {
+  animation: flameFlicker 0.65s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+@keyframes floatBob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(3deg);
+  }
+}
+
+.animate-float {
+  animation: floatBob 4s ease-in-out infinite;
+}
+
+@keyframes discoStrobe {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.party-mode-active {
+  animation: discoStrobe 8s linear infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fef08a;
+}
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 6px;
+  border: 2px solid #fef08a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "Bestie Birthday Celebration & Fireworks",
+  "description": "An interactive grand birthday celebration website for besties featuring theatrical velvet curtain reveal, realistic fireworks & firecrackers, 3D interactive birthday cake with candle blowing, polaroid memory lane, balloon popping game, golden scratch card, and custom party synth music.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
